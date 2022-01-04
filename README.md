@@ -26,7 +26,7 @@ Create the parent instance and give it the IP address of your Energenie device. 
 
 # Limitations
 
-While it has been tested, it has not been tested very much and may not support other devices or different firmware.
+While it has been tested, it has not been tested very much and may not support other related devices or those running different firmware.
 
 # Buy me a coffee
 
@@ -34,6 +34,13 @@ If you choose to use/customise or just like this plug-in, feel free to say thank
 (God knows I drank enough working on this :-)) 
 
 <a href="https://www.buymeacoffee.com/gbraad" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+# Screenshots
+
+Once installed, and the IP address added, you should see the 4 controllable socket created as child devices.
+
+![DBEC60E5-F18F-484D-A951-3E483E4DF0BC](https://user-images.githubusercontent.com/4349292/148046320-da355f16-bb08-4631-9c89-de4027ecaf19.jpeg)
+
 
 # License
 
