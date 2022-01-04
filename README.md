@@ -2,7 +2,7 @@
 
 # Scope
 
-This is a Luup plugin for HTTP control of the Energenie EG PMS2 LAN IP switches
+This is a Luup plugin for HTTP control of the Energenie EG PMS (ENER019) LAN IP switches
 
 Luup (Lua-UPnP) is a software engine which incorporates Lua, a popular scripting language, and UPnP, the industry standard way to control devices. Luup is the basis of a number of home automation controllers e.g. Micasaverde Vera, Vera Home Control, OpenLuup.
 
@@ -10,7 +10,7 @@ Luup (Lua-UPnP) is a software engine which incorporates Lua, a popular scripting
 
 This plug-in has been tested with the following Energenie switches
 
-* EG PMS2 LAN
+* EG PMS LAN - > https://energenie4u.co.uk/res/pdfs/ENER019_User_Manual.pdf
 
 # Features
 
