@@ -1,0 +1,101 @@
+{
+	"default_icon": "../../../icons/home.png",
+	"state_icons":[
+		{
+			"img": "../../../icons/home.png",
+			"conditions": [
+				{
+			"service": "urn:nodecentral-net:serviceId:EnergeniePMS2",
+			"variable": "Icon",
+			"operator": "==",
+			"value": 1
+				}
+			]
+		},
+		{
+			"img": "../../../icons/error.png",
+			"conditions": [
+				{
+			"service": "urn:nodecentral-net:serviceId:EnergeniePMS2",
+			"variable": "Icon",
+			"operator": "==",
+			"value": 2
+				}
+			]
+		}
+	],
+	"x":"2",
+	"y":"4",
+	"inScene":"0",
+	"Tabs": [
+		{
+			"Label": {
+				"lang_tag": "ui7_tabname_control",
+				"text": "Control"
+			},
+			"Position": "0",
+			"TabType": "flash",
+			"top_navigation_tab": 1,
+			"ControlGroup":[
+				{
+					"id": "1",
+					"scenegroup": "1"
+				}
+			],
+			"SceneGroup":[
+				{
+					"id": "1",
+					"top": "1.5",
+					"left": "0.25",
+					"x": "1.5",
+					"y": "2"
+				}
+			],
+			"Control": [
+				{
+					"ControlGroup":"1",
+					"ControlType": "variable",
+					"top": "1",
+					"left": "0",
+					"Display": {
+						"Service": "urn:nodecentral-net:serviceId:EnergeniePMS2",
+						"Variable": "PluginVersion",
+						"Top": 60,
+						"Left": 145,
+						"Width": 75,
+						"Height": 20
+					}
+				},
+				{
+					"ControlGroup":"1",
+					"ControlType": "label",
+					"top": "0",
+					"left": "0",
+					"Label": {
+						"lang_tag": "ui7_adhoc",
+						"text": "v"
+					},
+					"Display": {
+						"Top": 60,
+						"Left": 180,
+						"Width": 75,
+						"Height": 20
+					}
+				}
+			]
+		},
+		{
+			"Label": {
+				"lang_tag": "ui7_advanced",
+				"text": "Advanced"
+			},
+			"Position": "1",
+			"TabType": "javascript",
+			"ScriptName": "shared.js",
+			"Function": "advanced_device"
+		}
+	],
+	"eventList2": [
+	],
+	"device_type": "urn:schemas-micasaverde-com:device:LightSensor:1"
+	}

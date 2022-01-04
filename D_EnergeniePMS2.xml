@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:nodecentral-net:device:EnergeniePMS2:1</deviceType>
+	<friendlyName>EnergeniePMS2</friendlyName>
+	<staticJson>D_EnergeniePMS2.json</staticJson>
+	<manufacturer>Energenie</manufacturer>
+	<modelDescription>Energenie PMS-LAN Switch</modelDescription>
+	<modelName>Energenie PMS-LAN</modelName>
+    <handleChildren>1</handleChildren>
+    <implementationList>
+		<implementationFile>I_EnergeniePMS2.xml</implementationFile>
+		</implementationList>
+    <serviceList>
+      <service>
+        <serviceType>urn:schemas-upnp-org:service:SwitchPower:1</serviceType>
+        <serviceId>urn:upnp-org:serviceId:SwitchPower1</serviceId>
+        <SCPDURL>S_SwitchPower1.xml</SCPDURL>
+      </service>
+      <service>
+        <serviceType>urn:schemas-micasaverde-com:service:HaDevice:1</serviceType>
+        <serviceId>urn:micasaverde-com:serviceId:HaDevice1</serviceId>
+        <SCPDURL>S_HaDevice1.xml</SCPDURL>
+	</service>
+    </serviceList>
+  </device>
+</root>

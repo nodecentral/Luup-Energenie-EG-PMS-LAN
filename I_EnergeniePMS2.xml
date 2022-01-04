@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- 
+	I_EnergeniePMS2.xml; Vera/openLuup "EnergeniePMS2 9258" Plug-in 
+	V1.1 Nov 2021
+-->
+<implementation>
+		<functions>
+		function initialiseEnergeniePMS2Plugin(lul_device)
+			luup.log("EnergeniePMS2: EnergeniePMS2 Plugin STARTING-UP!")
+			EnergeniePMS2 = require("L_EnergeniePMS2")
+			EnergeniePMS2Polling = EnergeniePMS2.EnergeniePMS2Poller
+			return EnergeniePMS2.EnergeniePMS2Startup(lul_device)
+		end
+		</functions>
+	<startup>initialiseEnergeniePMS2Plugin</startup>
+	<actionList>
+		<action>
+			<serviceId>urn:upnp-org:serviceId:SwitchPower1</serviceId>
+			<name>SetTarget</name>
+			<job>
+				EnergeniePMS2.OnOffCall(lul_device, lul_settings)
+			</job>
+			</action>
+		</actionList>
+</implementation>
