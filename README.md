@@ -20,9 +20,14 @@ It supports the following functions:
 * Set each channel on or off from Vera (discrete power)
 * Poll the device regularly to determine the actual status
 
-# Usage
+# Imstallation / Usage
 
-Create the parent instance and give it the IP address of your Energenie device. The child devices will then be created automatically.
+This installation assumes a default/factory set configuration is used, which makes the password '1'
+
+1. Upload the two icon .png files to the appropriate storage location on your controller. For Vera that's `/www/cmh/skins/default/icons`
+2. Upload the .xml and .json file in the repository to the appropriate storage location on your controller. For Vera that's via Apps/Develop Apps/Luup files/
+3. Create the parent decice instance via the appropriate route. For Vera that's Apps/Develop Apps/Create Device/ and putting "D_Energenie.xml" into the Upnp Device Filename box and the IP address of your Energenie device. 
+4. The child devices will then be created automatically.
 
 # Limitations
 
