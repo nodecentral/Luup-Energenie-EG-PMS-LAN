@@ -1,4 +1,4 @@
-# Luup-Energenie-EG-PMS2-LAN
+# Luup-Energenie-EG-PMS-LAN
 
 # Scope
 
